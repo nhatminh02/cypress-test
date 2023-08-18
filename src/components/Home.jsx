@@ -9,6 +9,7 @@ const Home = () => {
 
   return (
     <div>
+      <p>Hi there</p>
       <input type="text" onChange={handleInput} data-cy="inputText" />
       <p data-cy="text">{text}</p>
     </div>
