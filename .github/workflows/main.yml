@@ -13,3 +13,6 @@ jobs:
         with:
           build: npm run build
           start: npm run dev
+      - name: Check test results
+        if: ${{ failure() }}
+        run: exit 1
